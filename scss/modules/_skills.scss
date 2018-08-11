@@ -1,0 +1,26 @@
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.tool-boxes {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin:100px;
+  h4 {
+    border-bottom: 1px solid white;
+  }
+
+  li {
+    padding: 5px;
+  }
+}
+
+.tool-box {
+	margin: 5px;
+	width: 200px;
+  text-align: center;
+}

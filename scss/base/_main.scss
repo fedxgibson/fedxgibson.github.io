@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: 1px solid white;
+  background-color: transparent;
+  width: 200px;
+  height: 45px;
+  font-weight: lighter;
+  a {
+    color: white;
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+  &:hover {
+    background-color: white;
+  }
+}

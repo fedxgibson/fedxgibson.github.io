@@ -1,0 +1,13 @@
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-logo {
+  margin: 10px;
+  img {
+    width: 120px;
+  }
+}
