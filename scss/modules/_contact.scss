@@ -3,11 +3,26 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .contact-logo {
+  min-width: 130px;
   margin: 10px;
   img {
     width: 120px;
+  }
+}
+
+
+@media (max-width: 860px) {
+  .contact-logo {
+    min-width: 80px;
+    margin: 10px;
+    img {
+      width: 80px;
+    }
   }
 }

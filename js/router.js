@@ -3,7 +3,7 @@
   var root = null;
   var hash = '#!'; // Defaults to: '#'
   var router = new Navigo(root, false, hash);
-  var main = '#main';
+  var app = $('div[app="main"]');
 
   router
     .on({
@@ -28,10 +28,6 @@
     })
     .resolve();
 
-    router.notFound(function (query) {
-      // ...
-    });
-
     router.on(function () {
       loadHTML('home');
      });
@@ -41,7 +37,8 @@
       var data =  {};
       var source = $('#template-' + id).html();
       var template = Handlebars.compile(source);
-      $(main).html(template(data));
+      app.find('#content').html(template(data));
+      app.scrollTop(0);
     }
 
 

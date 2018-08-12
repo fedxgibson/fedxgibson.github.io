@@ -1,32 +1,5 @@
 
 /*Home*/
-$padding: 50px;
-
-body {
-  font-family: 'Raleway', sans-serif;
-  background-image: url('img/background.jpg');
-  background-color: black;
-  background-size: cover;
-  padding-top: $padding;
-  padding-bottom: $padding;
-  font-size: 1.5rem;
-  font-weight: lighter;
-}
-
-h1 {
-  font-size: 5.0rem;
-  font-weight: lighter;
-}
-
-h2 {
-  font-size: 2.0rem;
-  font-weight: 400;
-}
-
-h3 {
-  font-size: 2.0rem;
-  font-weight: 100;
-}
 
 .banner {
   color: white;
@@ -37,11 +10,16 @@ h3 {
   align-items: center;
 }
 
-.text-center {
-  text-align: center;
-}
 
 .hamburger__icon:before,
  .hamburger__icon:after{
-background-color: #fff
+  background-color: #fff
+}
+
+.main-title {
+  margin: 20px;
+}
+
+.main-slogan {
+  margin: 20px
 }

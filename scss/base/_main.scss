@@ -11,12 +11,56 @@ button {
   font-weight: lighter;
   a {
     color: white;
-    &:hover {
-      color: black;
-      background-color: white;
-    }
   }
+  
   &:hover {
     background-color: white;
+    color: black;
+    a {
+      color: black;
+    }
   }
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url('img/background.jpg');
+  background-color: black;
+  background-size: cover;
+  padding-top: $padding;
+  padding-bottom: $padding;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+@media (max-width: 860px) {
+  body {
+    font-size: 1.0rem;
+  }
+}
+
+h1 {
+  margin: 0;
+  font-size: 5.0rem;
+  font-weight: lighter;
+}
+
+@media (max-width: 860px) {
+  h1 {
+    font-size: 3.0rem;
+  }
+}
+
+h2 {
+  font-size: 2.0rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.0rem;
+  font-weight: 100;
+}
+
+.text-center {
+  text-align: center;
 }

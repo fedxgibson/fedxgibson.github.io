@@ -1,4 +1,5 @@
 // BASE
+@import 'base/variables';
 @import 'base/normalize';
 @import 'base/main';
 
@@ -11,3 +12,6 @@
 @import 'modules/about';
 @import 'modules/skills';
 @import 'modules/home';
+
+// EFFECTS
+@import 'effects';
