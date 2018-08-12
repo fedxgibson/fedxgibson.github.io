@@ -12,6 +12,7 @@
   $( document ).ready(function() {
     var typewriter1 = $('#typewriter1');
     var typewriter2 = $('#typewriter2');
+    typewriter1.addClass('type-cursor');
     typewriter2.css({width: '0'});
     console.log(animEndEventName)
 

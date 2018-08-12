@@ -12,7 +12,11 @@ button {
   a {
     color: white;
   }
-  
+
+  &:focus {
+      outline: 0;
+  }
+
   &:hover {
     background-color: white;
     color: black;
