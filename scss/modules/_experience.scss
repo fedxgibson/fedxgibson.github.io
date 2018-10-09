@@ -76,12 +76,12 @@ header h1 {
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
   .cd-timeline__container::before {
     left: 50%;
-    margin-left: -2px;
+    margin-left: -18px;
   }
 }
 
@@ -139,8 +139,8 @@ header h1 {
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline__img {
-    width: 60px;
-    height: 60px;
+    width: 25px;
+    height: 25px;
     left: 50%;
     margin-left: -30px;
     /* Force Hardware Acceleration */
