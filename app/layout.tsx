@@ -82,7 +82,7 @@ export default function RootLayout({
                       GitHub
                     </a>
                     <a 
-                      href="https://linkedin.com/in/fedxgibson" 
+                      href="https://linkedin.com/in/federico-martinez-bertone" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
