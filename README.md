@@ -34,3 +34,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+# Create blog
+
+```
+docker build -t chat-to-blog .
+
+docker run -it ... chat-to-blog \
+    --input /app/chat_logs/chat.txt \
+    --style technical \
+    --tone educational \
+    --audience "developers" \
+    --max-words 1500 \
+    --title "Custom Blog Title"
+
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-debug
+
+docker build -t claude-scraper . && docker run --rm --network="host" -v $(pwd)/claude_chats:/app/claude_chats claude-scraper
+
+```
