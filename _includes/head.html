@@ -1,0 +1,21 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<link  rel="preload" href="/assets/fonts/Raleway-Thin.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+	<style>
+		@font-face {
+				font-family: 'Raleway';
+				src: url('/assets/fonts/Raleway-Thin.woff2') format('woff2-variations');
+				font-weight: 100 900;
+				font-display: swap;
+		}
+
+		body {
+				font-family: 'Raleway', sans-serif;
+		}
+	</style>
+</head>

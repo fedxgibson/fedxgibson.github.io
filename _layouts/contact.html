@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<div class="max-w-2xl mx-auto px-8">
+    <h1 class="text-4xl font-light mb-8">Contact</h1>
+    
+    <div class="prose prose-invert max-w-none mb-12">
+        {{ content }}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+            {% if site.email %}
+            <div class="flex items-center space-x-3 text-gray-300">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                <a href="mailto:{{ site.email }}" class="hover:text-white transition-colors duration-200">
+                    {{ site.email }}
+                </a>
+            </div>
+            {% endif %}
+            
+            {% if site.location %}
+            <div class="flex items-center space-x-3 text-gray-300">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <span>{{ site.location }}</span>
+            </div>
+            {% endif %}
+        </div>
+
+        <form action="{{ site.formspree_url }}" method="POST" class="space-y-6">
+            <div class="space-y-2">
+                <label class="block text-gray-300" for="name">Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required
+                    class="w-full bg-gray-900 border border-gray-800 rounded px-4 py-2 text-white focus:outline-none focus:border-gray-600">
+            </div>
+            
+            <div class="space-y-2">
+                <label class="block text-gray-300" for="email">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="_replyto" 
+                    required
+                    class="w-full bg-gray-900 border border-gray-800 rounded px-4 py-2 text-white focus:outline-none focus:border-gray-600">
+            </div>
+            
+            <div class="space-y-2">
+                <label class="block text-gray-300" for="message">Message</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="4" 
+                    required
+                    class="w-full bg-gray-900 border border-gray-800 rounded px-4 py-2 text-white focus:outline-none focus:border-gray-600"></textarea>
+            </div>
+            
+            <button 
+                type="submit" 
+                class="px-6 py-2 border border-gray-800 text-white hover:bg-gray-900 transition-colors duration-200">
+                Send Message
+            </button>
+        </form>
+    </div>
+</div>

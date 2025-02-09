@@ -1,0 +1,14 @@
+# docker-compose.yml
+services:
+  site:
+    image: jekyll/jekyll:4.2.2
+    command: >
+      bash -c "bundle install &&
+      bundle exec jekyll serve --force_polling --host 0.0.0.0"
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development

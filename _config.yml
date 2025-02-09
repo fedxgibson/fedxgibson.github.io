@@ -1,0 +1,44 @@
+# Basic Site Settings
+title: Federico Martinez
+email: federico@example.com
+description: >-
+  Hi! I'm Fede, welcome to my personal blog where I'll write about things I learn and find useful.
+baseurl: "/"
+url: "https://fedxgibson.github.io"
+
+# Build settings
+# theme: minima
+markdown: kramdown
+permalink: /blog/:title/
+
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Social Media
+github_username: fedxgibson
+linkedin_username: federico-martinez-bertone
+email: federico.martinez005@gmail.com
+
+# Default Settings
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Federico Martinez"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
