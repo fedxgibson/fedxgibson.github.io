@@ -8,11 +8,16 @@ url: "https://fedxgibson.github.io"
 
 # Build settings
 # theme: minima
-markdown: kramdown
 permalink: /blog/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 sass:
+  sass_dir: _sass
   style: compressed
+  sourcemap: never
 
 # Plugins
 plugins:
@@ -23,15 +28,6 @@ plugins:
 github_username: fedxgibson
 linkedin_username: federico-martinez-bertone
 email: federico.martinez005@gmail.com
-
-# Default Settings
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Federico Martinez"
 
 # Exclude from processing
 exclude:
