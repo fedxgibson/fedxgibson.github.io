@@ -1,26 +1,21 @@
 ---
 layout: default
 ---
-<div class="max-w-2xl mx-auto px-8">
-    <h1 class="text-4xl font-light mb-12">Blog</h1>
-    
-    <div class="space-y-16">
-        {% for post in site.posts %}
-        <article class="group">
-            <a href="{{ post.url }}" class="block space-y-4 p-4 hover:bg-gray-900">
-                <div class="space-y-2">
-                    <h2 class="text-2xl font-light group-hover:text-gray-300 transition-colors duration-200">
-                        {{ post.title }}
-                    </h2>
-                    <time class="text-gray-400 text-sm" datetime="{{ post.date | date_to_xmlschema }}">
-                        {{ post.date | date: "%B %-d, %Y" }}
-                    </time>
-                </div>
-                <p class="text-gray-300 leading-relaxed">
-                    {{ post.excerpt | strip_html | truncatewords: 30 }}
-                </p>
-            </a>
-        </article>
-        {% endfor %}
-    </div>
+<div class="max-w-6xl mx-auto px-8">
+  <h1 class="text-5xl font-light mb-16 text-center">Blog</h1>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {% for post in site.posts %}
+    <article class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+      <a href="{{ post.url }}" class="block">
+        <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" class="w-full h-48 object-cover">
+        <div class="p-6 space-y-4">
+          <time class="text-indigo-400 text-sm">{{ post.date | date: "%B %-d, %Y" }}</time>
+          <h2 class="text-xl font-semibold text-white">{{ post.title }}</h2>
+          <p class="text-gray-400 line-clamp-3">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        </div>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
 </div>

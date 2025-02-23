@@ -3,9 +3,10 @@ layout: post
 title: 'Beyond Code: How AI is Returning Software Development to its Engineering Roots'
 date: '2024-11-02'
 author: 'Federico Martinez'
+image: assets/images/human-ai-collab.png
 ---
 
-![Human AI Collaboration]({% link assets/images/human-ai-collab.png %})
+![Human AI Collaboration]({{ site.baseurl }}{{ page.image }})
 
 ## El Futuro del Desarrollo de Software en la Era de la IA: Una Reflexión sobre Consciencia y Propósito
 
