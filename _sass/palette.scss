@@ -1,0 +1,46 @@
+
+$bg-primary: #FFF5E1;             // Example: Coffee & Cream (light background)
+$text-primary: #FFF5E1;
+$text-secondary: #4A2C2A;         // Dark text/buttons
+$bg-secondary: #4A2C2A;       // Dark background for code blocks, etc.
+$text-primary-alpha: rgba(74, 44, 42, 0.8);
+$text-secondary-alpha: rgba(74, 44, 42, 0.8);
+$border-secondary-alpha: rgba(74, 44, 42, 0.5);
+
+/* Example Palette: Coffee & Cream (light background) */
+.bg-primary { background-color: $bg-primary; } /* Light background */
+.text-secondary { color: $text-secondary }       /* Dark text/buttons */
+.text-primary-alpha { color: $text-primary-alpha }
+.text-secondary-alpha { color: $text-secondary-alpha }
+.border-secondary-alpha { border-color: $border-secondary-alpha }
+.hover\:bg-secondary:hover { background-color: $bg-secondary }
+.hover\:text-primary:hover { color: $text-primary; }
+
+/* To change palette, just update the colors above. Other examples: */
+
+/* Midnight Blue & Gold
+.bg-primary { background-color: #D4AF37; }
+.text-secondary { color: #1A2526; }
+.text-secondary-alpha { color: rgba(26, 37, 38, 0.8); }
+.border-secondary-alpha { border-color: rgba(26, 37, 38, 0.5); }
+.hover\:bg-secondary:hover { background-color: #1A2526; }
+.hover\:text-primary:hover { color: #D4AF37; }
+*/
+
+/* Dark Green & Sand
+.bg-primary { background-color: #F4E4BC; }
+.text-secondary { color: #2F4F4F; }
+.text-secondary-alpha { color: rgba(47, 79, 79, 0.8); }
+.border-secondary-alpha { border-color: rgba(47, 79, 79, 0.5); }
+.hover\:bg-secondary:hover { background-color: #2F4F4F; }
+.hover\:text-primary:hover { color: #F4E4BC; }
+*/
+
+/* Soft Purple & Cyberpunk
+.bg-primary { background-color: #B19CD9; }
+.text-secondary { color: #1F1B24; }
+.text-secondary-alpha { color: rgba(31, 27, 36, 0.8); }
+.border-secondary-alpha { border-color: rgba(31, 27, 36, 0.5); }
+.hover\:bg-secondary:hover { background-color: #1F1B24; }
+.hover\:text-primary:hover { color: #B19CD9; }
+*/

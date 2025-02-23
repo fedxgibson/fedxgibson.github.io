@@ -1,9 +1,8 @@
-
 .markdown {
-	color: #9CA3AF;  // Base text color
+	color: $text-secondary-alpha;  // Base text color
 
 	h1, h2, h3, h4, h5, h6 {
-			color: #FFFFFF;
+			color: $text-secondary;
 			font-weight: 300;
 			margin-top: 2rem;
 			margin-bottom: 1rem;
@@ -29,22 +28,22 @@
 	}
 
 	blockquote {
-			border-left: 4px solid #374151;
+			border-left: 4px solid $border-secondary-alpha;
 			padding-left: 1rem;
 			margin: 1.5rem 0;
-			color: #FFFFFF;
+			color: $text-secondary;
 	}
 
 	code {
-			background: #1F2937;
+			background: $bg-secondary;
 			padding: 0.2rem 0.4rem;
 			border-radius: 0.25rem;
 			font-size: 0.875rem;
-			color: #FFFFFF;
+			color: $text-secondary;
 	}
 
 	pre {
-			background: #1F2937;
+			background: $bg-secondary;
 			padding: 1rem;
 			border-radius: 0.5rem;
 			overflow-x: auto;
@@ -54,15 +53,15 @@
 					background: none;
 					padding: 0;
 					font-size: 0.875rem;
-					color: #D1D5DB;
+					color: $text-secondary-alpha;
 			}
 	}
 
 	a {
-			color: #FFFFFF;
+			color: $text-secondary;
 			text-decoration: underline;
 			&:hover {
-					color: #9CA3AF;
+					color: $text-secondary-alpha;
 			}
 	}
 
@@ -75,7 +74,7 @@
 
 	hr {
 			border: 0;
-			border-top: 1px solid #374151;
+			border-top: 1px solid $border-secondary-alpha;
 			margin: 2rem 0;
 	}
 
@@ -85,14 +84,14 @@
 			margin: 1.5rem 0;
 
 			th {
-					background: #1F2937;
-					border: 1px solid #374151;
+					background: $bg-secondary;
+					border: 1px solid $border-secondary-alpha;
 					padding: 0.5rem;
-					color: #FFFFFF;
+					color: $text-secondary;
 			}
 
 			td {
-					border: 1px solid #374151;
+					border: 1px solid $border-secondary-alpha;
 					padding: 0.5rem;
 			}
 	}

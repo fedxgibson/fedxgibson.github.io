@@ -1,26 +1,26 @@
 ---
 layout: default
 ---
-<article class="max-w-2xl mx-auto px-8">
+<article class="max-w-2xl mx-auto px-8 bg-primary">
     <header class="mb-12">
-        <h1 class="text-4xl font-light mb-4">{{ page.title }}</h1>
-        <div class="flex items-center text-gray-400">
+        <h1 class="text-4xl font-light mb-4 text-secondary">{{ page.title }}</h1>
+        <div class="flex items-center text-secondary-alpha">
             <time datetime="{{ page.date | date_to_xmlschema }}">
                 {{ page.date | date: "%B %-d, %Y" }}
             </time>
             {% if page.author %}
-            <span class="mx-2">•</span>
+            <span class="mx-2 text-secondary-alpha">•</span>
             <span>{{ page.author }}</span>
             {% endif %}
         </div>
     </header>
 
-    <div class="markdown">
+    <div class="markdown text-secondary">
         {{ content }}
     </div>
 
-    <footer class="mt-12 pt-8 border-t border-gray-800">
-        <a href="/blog" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center">
+    <footer class="mt-12 pt-8 border-t border-secondary-alpha">
+        <a href="/blog" class="text-secondary hover:text-secondary-alpha transition-colors duration-200 flex items-center">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
             </svg>

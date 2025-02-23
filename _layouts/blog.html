@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-<div class="max-w-6xl mx-auto px-8">
-  <h1 class="text-5xl font-light mb-16 text-center">Blog</h1>
+<div class="max-w-6xl mx-auto px-8 bg-primary">
+  <h1 class="text-5xl font-light mb-16 text-center text-secondary">Blog</h1>
   
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
     {% for post in site.posts %}
-    <article class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+    <article class="bg-secondary rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
       <a href="{{ post.url }}" class="block">
         <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="w-full h-48 object-cover">
         <div class="p-6 space-y-4">
-          <time class="text-indigo-400 text-sm">{{ post.date | date: "%B %-d, %Y" }}</time>
-          <h2 class="text-xl font-semibold text-white">{{ post.title }}</h2>
-          <p class="text-gray-400 line-clamp-3">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          <time class="text-secondary-alpha text-sm">{{ post.date | date: "%B %-d, %Y" }}</time>
+          <h2 class="text-xl font-semibold text-primary">{{ post.title }}</h2>
+          <p class="text-secondary-alpha line-clamp-3">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         </div>
       </a>
     </article>
