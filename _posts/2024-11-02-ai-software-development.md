@@ -6,7 +6,7 @@ author: 'Federico Martinez'
 image: assets/images/human-ai-collab.png
 ---
 
-![Human AI Collaboration]({{ site.baseurl }}{{ page.image }})
+![Human AI Collaboration]({{ page.image | relative_url }})
 
 ## El Futuro del Desarrollo de Software en la Era de la IA: Una Reflexión sobre Consciencia y Propósito
 

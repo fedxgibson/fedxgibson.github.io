@@ -4,7 +4,8 @@ title: About
 image: assets/images/me.jpg
 ---
 
-![Me]({{ site.baseurl }}{{ page.image }})
+![Me]({{ page.image | relative_url }})
+
 
 # Hello! Thanks for visiting.
 

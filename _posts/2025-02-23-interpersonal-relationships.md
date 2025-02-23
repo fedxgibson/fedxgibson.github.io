@@ -6,7 +6,7 @@ author: 'Federico Martinez'
 image: assets/images/mirrors-psych.png
 ---
 
-![Projecting into others]({{ site.baseurl }}{{ page.image }})
+![Projecting into others]({{ page.image | relative_url }})
 
 ## Introducción
 
